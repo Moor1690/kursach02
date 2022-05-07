@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="top"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="124dp">
+        <TextView
+            android:id="@+id/today"
+            android:text="today"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/day"
+            android:text="day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            >
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/textViewPairNumber1"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:text="1" />
+
+            <TextView
+                android:id="@+id/textViewTime1"
+                android:layout_width="10dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                android:layout_weight="3"
+                android:text=" 9:00\n10:30" />
+
+            <TextView
+                android:id="@+id/textViewName1"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                android:layout_weight="8"
+                android:text="@string/para1" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/textViewCabinet1"
+                android:layout_width="10dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                android:layout_weight="3"
+                android:text="@string/kabinet1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/textViewPairNumber2"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:text="2" />
+
+            <TextView
+                android:id="@+id/textViewTime2"
+                android:layout_width="10dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                android:layout_weight="3"
+                android:text="10:40\n12:10" />
+
+            <TextView
+                android:id="@+id/textViewName2"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                android:layout_weight="8"
+                android:text="@string/para2" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/textViewCabinet2"
+                android:layout_width="10dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                android:layout_weight="3"
+                android:text="@string/kabinet2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/textViewPairNumber3"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:text="3" />
+
+            <TextView
+                android:id="@+id/textViewTime3"
+                android:layout_width="10dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                android:layout_weight="3"
+                android:text="12:40\n14:10" />
+
+            <TextView
+                android:id="@+id/textViewName3"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                android:layout_weight="8"
+                android:text="@string/para3" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/textViewCabinet3"
+                android:layout_width="10dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                android:layout_weight="3"
+                android:text="@string/kabinet3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/textViewPairNumber4"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:text="4" />
+
+            <TextView
+                android:id="@+id/textViewTime4"
+                android:layout_width="10dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                android:layout_weight="3"
+                android:text="14:20\n15:50" />
+
+            <TextView
+                android:id="@+id/textViewName4"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                android:layout_weight="8"
+                android:text="@string/para4" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/textViewCabinet4"
+                android:layout_width="10dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                android:layout_weight="3"
+                android:text="@string/kabinet4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/textViewPairNumber5"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:text="5" />
+
+            <TextView
+                android:id="@+id/textViewTime5"
+                android:layout_width="10dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                android:layout_weight="3"
+                android:text="16:20\n17:50" />
+
+            <TextView
+                android:id="@+id/textViewName5"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                android:layout_weight="8"
+                android:text="@string/para5" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/textViewCabinet5"
+                android:layout_width="10dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                android:layout_weight="3"
+                android:text="@string/kabinet5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/textViewPairNumber6"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:text="6" />
+
+            <TextView
+                android:id="@+id/textViewTime6"
+                android:layout_width="10dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                android:layout_weight="3"
+                android:text="18:00\n19:30" />
+
+            <TextView
+                android:id="@+id/textViewName6"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                android:layout_weight="8"
+                android:text="@string/para6" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/textViewCabinet6"
+                android:layout_width="10dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                android:layout_weight="3"
+                android:text="@string/kabinet6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+            <Button
+                android:id="@+id/btnPrev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Prev"
+                android:layout_margin="1dp"/>
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Next"
+                android:layout_margin="1dp"/>
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/getRsrp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="3"
+            android:text="some text" />
+        <TextView
+            android:id="@+id/getRsrq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="3"
+            android:text="some text" />
+        <TextView
+            android:id="@+id/getRssnr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="3"
+            android:text="some text" />
+        <TextView
+            android:id="@+id/getCqi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="3"
+            android:text="some text" />
+    </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/edit_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:hint="@string/edit_message"
+            android:maxLines="1"
+            android:maxLength="10"/>
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Ok"
+            />
+        <TextView
+            android:id="@+id/tvOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="result"/>
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

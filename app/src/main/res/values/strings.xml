@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Timetable 01</string>
+
+
+    <string name="edit_message">Введите сообщение</string>
+
+    <string name="para1">название \nпредмета</string>
+    <string name="para2">название \nпредмета</string>
+    <string name="para3">название \nпредмета</string>
+    <string name="para4">название \nпредмета</string>
+    <string name="para5">название \nпредмета</string>
+    <string name="para6">название \nпредмета</string>
+    <string name="kabinet1">Кабинет</string>
+    <string name="kabinet2">Кабинет</string>
+    <string name="kabinet3">Кабинет</string>
+    <string name="kabinet4">Кабинет</string>
+    <string name="kabinet5">Кабинет</string>
+    <string name="kabinet6">Кабинет</string>
+
+    <string name="da">День</string>
+</resources>
