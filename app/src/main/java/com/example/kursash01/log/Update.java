@@ -22,10 +22,7 @@ public class Update {
 
     public static void getWebsite() {
         System.out.println("Update.getWebsite();\t");
-
-        File file = new File("/storage/emulated/0/Download/my");
-        file.mkdir();
-        Update.deleteOld();
+        //Update.deleteOld();
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -60,6 +57,7 @@ public class Update {
 
 
                 File file = new File("/storage/emulated/0/Download/my");
+                File file2 = new File("/storage/emulated/0/Download/my/my.txt");
                 File[] lis = file.listFiles();
                 //System.out.println(lis[1].getPath());
 

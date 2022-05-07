@@ -14,31 +14,12 @@
         android:gravity="top"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="124dp">
-        <TextView
-            android:id="@+id/today"
-            android:text="today"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            >
-        </TextView>
-
-        <TextView
-            android:id="@+id/day"
-            android:text="day"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            >
-        </TextView>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center">
+            android:layout_height="wrap_content">
 
             <TextView
-                android:gravity="center"
                 android:id="@+id/textViewPairNumber1"
                 android:layout_width="wrap_content"
                 android:layout_height="35dp"
@@ -60,10 +41,9 @@
                 android:layout_height="35dp"
                 android:layout_margin="2dp"
                 android:layout_weight="8"
-                android:text="@string/para1" />
+                android:hint="@string/para1" />
 
             <TextView
-                android:gravity="center"
                 android:id="@+id/textViewCabinet1"
                 android:layout_width="10dp"
                 android:layout_height="35dp"
@@ -74,11 +54,9 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center">
+            android:layout_height="wrap_content">
 
             <TextView
-                android:gravity="center"
                 android:id="@+id/textViewPairNumber2"
                 android:layout_width="wrap_content"
                 android:layout_height="35dp"
@@ -103,7 +81,6 @@
                 android:text="@string/para2" />
 
             <TextView
-                android:gravity="center"
                 android:id="@+id/textViewCabinet2"
                 android:layout_width="10dp"
                 android:layout_height="35dp"
@@ -114,11 +91,9 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center">
+            android:layout_height="wrap_content">
 
             <TextView
-                android:gravity="center"
                 android:id="@+id/textViewPairNumber3"
                 android:layout_width="wrap_content"
                 android:layout_height="35dp"
@@ -143,7 +118,6 @@
                 android:text="@string/para3" />
 
             <TextView
-                android:gravity="center"
                 android:id="@+id/textViewCabinet3"
                 android:layout_width="10dp"
                 android:layout_height="35dp"
@@ -154,11 +128,9 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center">
+            android:layout_height="wrap_content">
 
             <TextView
-                android:gravity="center"
                 android:id="@+id/textViewPairNumber4"
                 android:layout_width="wrap_content"
                 android:layout_height="35dp"
@@ -183,7 +155,6 @@
                 android:text="@string/para4" />
 
             <TextView
-                android:gravity="center"
                 android:id="@+id/textViewCabinet4"
                 android:layout_width="10dp"
                 android:layout_height="35dp"
@@ -194,11 +165,9 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center">
+            android:layout_height="wrap_content">
 
             <TextView
-                android:gravity="center"
                 android:id="@+id/textViewPairNumber5"
                 android:layout_width="wrap_content"
                 android:layout_height="35dp"
@@ -223,7 +192,6 @@
                 android:text="@string/para5" />
 
             <TextView
-                android:gravity="center"
                 android:id="@+id/textViewCabinet5"
                 android:layout_width="10dp"
                 android:layout_height="35dp"
@@ -234,11 +202,9 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center">
+            android:layout_height="wrap_content">
 
             <TextView
-                android:gravity="center"
                 android:id="@+id/textViewPairNumber6"
                 android:layout_width="wrap_content"
                 android:layout_height="35dp"
@@ -263,7 +229,6 @@
                 android:text="@string/para6" />
 
             <TextView
-                android:gravity="center"
                 android:id="@+id/textViewCabinet6"
                 android:layout_width="10dp"
                 android:layout_height="35dp"
@@ -283,53 +248,24 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Prev"
-                android:layout_margin="1dp"/>
+                android:onClick="sendMessage"
+                android:text="Prev" />
             <Button
                 android:id="@+id/btnNext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Next"
-                android:layout_margin="1dp"/>
-
-
+                android:onClick="sendMessage"/>
         </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
         <TextView
-            android:id="@+id/getRsrp"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="2dp"
-            android:layout_weight="3"
-            android:text="some text" />
-        <TextView
-            android:id="@+id/getRsrq"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="2dp"
-            android:layout_weight="3"
-            android:text="some text" />
-        <TextView
-            android:id="@+id/getRssnr"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="2dp"
-            android:layout_weight="3"
-            android:text="some text" />
-        <TextView
-            android:id="@+id/getCqi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="2dp"
-            android:layout_weight="3"
-            android:text="some text" />
-    </LinearLayout>
+            android:text="getCsiCqiTableIndex ()"
+            android:id="@+id/edit">
 
+        </TextView>
 
         <EditText
             android:id="@+id/edit_message"
@@ -337,9 +273,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="50dp"
-            android:hint="@string/edit_message"
-            android:maxLines="1"
-            android:maxLength="10"/>
+            android:hint="@string/edit_message" />
 
         <Button
             android:id="@+id/btnOk"
@@ -353,7 +287,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="result"/>
+            android:text="text"/>
 
 
     </LinearLayout>
