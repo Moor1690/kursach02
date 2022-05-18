@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
         }else {
             toDay.setText(date.toString());
         }*/
-        toDay.setText("Сегодня " + Integer.toString(date.getDay()) + "." + (cal.get(Calendar.MONTH)+1)
+        toDay.setText("Сегодня " + cal.get(Calendar.DAY_OF_MONTH) + "." + (cal.get(Calendar.MONTH)+1)
                 + "." +(cal.get(Calendar.YEAR)-2000)  + "\t\tНеделя: " + chet);
         tv.setText("День: " + Integer.toString(date.getDay()) + "\tНеделя: " + chet);
 
@@ -243,11 +243,22 @@ public class MainActivity extends AppCompatActivity {
                         try {
                             System.out.println("try ");
                             if (message.toUpperCase().matches("[А-Я]{4}[-]{1}[0-9]{2}[-]{1}[0-9]{2}")){
-                                tvOut.setText(p.find(message.toUpperCase(), mstr, kabinet));
+                                String s = p.find(message.toUpperCase(), mstr, kabinet);
+                                tvOut.setText(s);
+                                if (s.equals("группа не найдена")){
+                                    for (int i = 0; i < 6; i++) {
+                                        for (int i2 = 0; i2 < 12; i2++) {
+                                            mstr[i][i2] = " ";
+                                            kabinet[i][i2] = " ";
+                                        }
+                                    };
+                                }
+
                             }
                             else {
                                 tvOut.setText("Неверный формат группы");
                                 System.out.println("try is loose");
+
                             }
                         } catch (IOException e) {
                             e.printStackTrace();

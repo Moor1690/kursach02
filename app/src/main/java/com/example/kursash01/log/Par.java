@@ -20,7 +20,7 @@ public class Par {
     public int indexX;
     public int indexY;
     public  int test = 0;
-    public String gotovo = " ";
+    public String gotovo;
     public StringBuilder otvet = new  StringBuilder();
 
     //////////////////////////////////////////////////////////////
@@ -29,6 +29,7 @@ public class Par {
 
 
     public String find (String group,String [][] mstr, String [][] kabinet) throws IOException {
+        gotovo = " ";
         //group = "ИКБО-27-20";
         System.out.println(group);
         File myFolder = new File("/storage/emulated/0/Download/my");
@@ -235,14 +236,13 @@ public class Par {
                 String taech = getCellText(wb1.getSheetAt(0).getRow(indexRowPredmet + i2 + newDay).getCell(indexX+2)) + "\t";
                 String location = getCellText(wb1.getSheetAt(0).getRow(indexRowPredmet + i2 + newDay).getCell(indexX+3)) + "\n";
 
-                otvet.append(indexRowPredmet + "\t");
-                otvet.append(i2 + "\t");
+                /*otvet.append(indexRowPredmet + "\t");
+                otvet.append(i2 + "\t");*/
                 mstr[i][i2] = predmet;
-                //mstr[i][i2+1] = location;
-                System.out.println("predmet\t" + predmet);
-                System.out.println("location\t" + location);
+               /* System.out.println("predmet\t" + predmet);
+                System.out.println("location\t" + location);*/
                 kabinet[i][i2] = type + " " + location;
-                System.out.println("mstr[" + i + "][" +i2 + "]\t" + mstr[i][i2]);
+                /*System.out.println("mstr[" + i + "][" +i2 + "]\t" + mstr[i][i2]);
                 System.out.println("kabinet[" + i + "][" +i2 + "]\t" + kabinet[i][i2]);
 
                 otvet.append(newDay + "\t");
@@ -251,7 +251,7 @@ public class Par {
                 otvet.append(predmet);
                 otvet.append(type);
                 otvet.append(taech);
-                otvet.append(location);
+                otvet.append(location);*/
 
 
 
@@ -261,7 +261,7 @@ public class Par {
             }
             newDay += 12;
         }
-        System.out.println("otvet\t" + otvet+"\t"+"\t");
+        //System.out.println("otvet\t" + otvet+"\t"+"\t");
         return otvet.toString();
 
 
