@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
     String[][] kabinet = new String[6][12];
     int chet2;
     int chet = 0;
+    SharedPreferences sPref;
 
     Date date = new Date();
     int today = date.getDay();
@@ -53,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
+        loadText();
         tvOut = (TextView) findViewById(R.id.tvOut);
         btnOk = (Button) findViewById(R.id.btnOk);
         btnNext = (Button) findViewById(R.id.btnNext);
@@ -234,6 +236,7 @@ public class MainActivity extends AppCompatActivity {
 
                         break;
                     case R.id.btnOk:
+                        saveText();
                         EditText editText = (EditText) findViewById(R.id.edit_message);
                         String message = editText.getText().toString();
                         tvOut = (TextView) findViewById(R.id.tvOut);
@@ -322,6 +325,21 @@ public class MainActivity extends AppCompatActivity {
 
     }*/
 
+
+    public void saveText(){
+        EditText et = findViewById(R.id.edit_message);
+        sPref = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref.edit();
+        ed.putString("SAVED_TEXT", et.getText().toString());
+        ed.commit();
+    }
+
+    public void loadText(){
+        EditText et = findViewById(R.id.edit_message);
+        sPref = getPreferences(MODE_PRIVATE);
+        String savedText = sPref.getString("SAVED_TEXT", "");
+        et.setText(savedText);
+    }
 
 
 
