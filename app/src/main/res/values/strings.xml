@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">kursash01</string>
+    <string name="app_name">Timetable 01</string>
 
 
     <string name="edit_message">Введите сообщение</string>
@@ -16,4 +16,6 @@
     <string name="kabinet4">Кабинет</string>
     <string name="kabinet5">Кабинет</string>
     <string name="kabinet6">Кабинет</string>
+
+    <string name="da">День</string>
 </resources>
